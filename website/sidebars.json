@@ -1,0 +1,14 @@
+{
+  "docs": {
+    "Getting Started": [
+      "getting_started/gettingstarted",
+      "getting_started/installation",
+      "getting_started/running"
+    ],
+    "Style Guide": ["doc2"],
+    "Road Map": ["doc3"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
