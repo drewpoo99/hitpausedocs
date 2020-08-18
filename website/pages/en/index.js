@@ -60,13 +60,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/undraw_note_list.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl('getting_started/gettingstarted.html')}>View Docs</Button>
+            {/* <Button href={docUrl('doc1.html')}>Example Link</Button>
+            <Button href={docUrl('doc2.html')}>Example Link 2</Button> */}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -79,6 +79,8 @@ class Index extends React.Component {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
 
+    
+
     const Block = (props) => (
       <Container
         padding={['bottom', 'top']}
@@ -90,6 +92,20 @@ class Index extends React.Component {
           layout={props.layout}
         />
       </Container>
+    );
+
+    const Description = () => (
+      <Block background="dark">
+        {[
+          {
+            content:
+              'This is another description of how this project is useful',
+            image: `${baseUrl}img/undraw_note_list.svg`,
+            imageAlign: 'right',
+            title: 'Description',
+          },
+        ]}
+      </Block>
     );
 
     const FeatureCallout = () => (
@@ -117,19 +133,7 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
+   
 
     const LearnHow = () => (
       <Block background="light">
@@ -197,14 +201,14 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
+        {/* <div className="mainContainer">
+          <Description />
           <Features />
           <FeatureCallout />
           <LearnHow />
           <TryOut />
-          <Description />
           <Showcase />
-        </div>
+        </div> */}
       </div>
     );
   }

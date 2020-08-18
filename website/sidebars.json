@@ -5,7 +5,17 @@
       "getting_started/installation",
       "getting_started/running"
     ],
-    "Style Guide": ["doc2"],
+    "Style Guide": [
+      "styling/typography",
+      "styling/colors",
+      "styling/forms",
+      "styling/navigation",
+      "styling/buttons",
+      "styling/components",
+      "styling/containers",
+      "styling/layout-utilities",
+      "styling/interactions"
+    ],
     "Road Map": ["doc3"]
   },
   "docs-other": {
