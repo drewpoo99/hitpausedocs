@@ -17,7 +17,8 @@
       "styling/layout-utilities",
       "styling/interactions"
     ],
-    "Road Map": ["doc3"]
+    "Road Map": ["doc3"],
+    "Contributing":["contributing"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
