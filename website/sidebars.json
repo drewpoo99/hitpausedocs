@@ -6,6 +6,7 @@
       "getting_started/running"
     ],
     "Style Guide": [
+      "styling/about",
       "styling/typography",
       "styling/colors",
       "styling/forms",
